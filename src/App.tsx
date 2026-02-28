@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { DevSceneSvg } from "./DevSceneSvg";
 
 type Runner = {
   x: number;
@@ -269,11 +270,40 @@ export const App: React.FC = () => {
       <div className="background-gradient" />
       <button
         type="button"
-        className="anim-toggle"
+        className={`anim-toggle ${animationsEnabled ? "anim-toggle-pulse" : ""}`}
         onClick={() => setAnimationsEnabled((prev) => !prev)}
       >
         {animationsEnabled ? "Disable animation" : "Enable animation"}
       </button>
+      {animationsEnabled && (
+        <div className="dev-scene" aria-hidden="true">
+          <div className="dev-scene-inner">
+            <DevSceneSvg className="dev-scene-svg" />
+            <div className="dev-screen-overlay">
+              <div className="dev-code-wrap">
+                <pre className="dev-code">
+{`const App = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    fetch('/api').then(r => r.json())
+      .then(setData);
+  }, []);
+  return <List items={data} />;
+}
+const App = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    fetch('/api').then(r => r.json())
+      .then(setData);
+  }, []);
+  return <List items={data} />;
+}`}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
       {animationsEnabled && (
         <div className="global-chase" aria-hidden="true">
         <div className="thrower-band">
@@ -315,7 +345,6 @@ export const App: React.FC = () => {
           <div className="snowball snowball-2" ref={snow2Ref} />
           <div className="snowball snowball-3" ref={snow3Ref} />
         </div>
-          <div className="global-chase-ground" />
           <div className="global-runner runner-angular" ref={angularRef}>
             <span className="runner-letter">Angular</span>
             <div className="runner-body">
@@ -357,8 +386,7 @@ export const App: React.FC = () => {
           <span className="badge">Senior Frontend / Full‑Stack Developer</span>
           <h1 className="hero-title">Babken Pokrikyan</h1>
           <p className="hero-subtitle">
-            7+ years building scalable enterprise platforms, complex business systems, and
-            high‑performance frontend architectures with Angular, React, and TypeScript.
+          Front-end / Full-Stack Engineer with 7+ years of experience delivering scalable enterprise platforms, complex business applications, and high-performance front-end architectures using Angular, React, and TypeScript.
           </p>
           <div className="hero-meta">
             <span>📍 Armenia (Open to Remote)</span>
@@ -378,7 +406,7 @@ export const App: React.FC = () => {
           <div className="hero-card-inner">
             <p className="hero-card-title">Tech Snapshot</p>
             <ul className="hero-card-list">
-              <li>Angular, React, TypeScript, NgRx, RxJS</li>
+              <li>Angular, React, TypeScript, NgRx, Redux, RxJS, Tailwind CSS, Bootstrap, Material UI</li>
               <li>Node.js, REST APIs, MongoDB</li>
               <li>Code Reviews, Refactoring, Version Upgrades</li>
               <li>Performance & Bundle Optimization</li>
@@ -428,7 +456,7 @@ export const App: React.FC = () => {
               <div>
                 <h3>Senior Full‑Stack Developer</h3>
                 <p className="company">
-                  Benekiva / FreeDOM Development · US – Remote · 2018 – Present
+                  Benekiva / FreeDOM Development · US – Remote · 2018 – 2026
                 </p>
               </div>
               <span className="pill">Enterprise Insurance Platform</span>
@@ -456,7 +484,7 @@ export const App: React.FC = () => {
             <header className="experience-header">
               <div>
                 <h3>Frontend Developer</h3>
-                <p className="company">Lunetworks · Yerevan · 2021 – 2023</p>
+                <p className="company">Iunetworks · Yerevan · 2021 – 2023</p>
               </div>
               <span className="pill">Governmental Tax System</span>
             </header>
@@ -475,7 +503,7 @@ export const App: React.FC = () => {
             <header className="experience-header">
               <div>
                 <h3>Freelance Frontend Developer (React.js)</h3>
-                <p className="company">2025</p>
+                <p className="company">2025 - Present</p>
               </div>
               <span className="pill">React + Ant Design</span>
             </header>
