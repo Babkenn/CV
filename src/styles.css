@@ -1124,6 +1124,9 @@ body {
 }
 
 @media (max-width: 880px) {
+  .dev-scene {
+    display: none;
+  }
   .hero {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -1148,6 +1151,33 @@ body {
 
   .experience-card {
     padding: 12px 12px 10px;
+    overflow: visible;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .experience-header > div {
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .experience-header .pill {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    letter-spacing: 0.08em;
+    align-self: stretch;
+    text-align: center;
+  }
+
+  .company {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   .hero-meta {

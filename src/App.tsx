@@ -290,6 +290,9 @@ export const App: React.FC = () => {
   }, []);
   return <List items={data} />;
 }
+  You should hire me! 
+  Call me at 
+  +374 95 203234 
 const App = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -297,6 +300,7 @@ const App = () => {
       .then(setData);
   }, []);
   return <List items={data} />;
+
 }`}
                 </pre>
               </div>
