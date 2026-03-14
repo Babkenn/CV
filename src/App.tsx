@@ -429,13 +429,14 @@ const App = () => {
             <div className="card">
               <h3>Frontend</h3>
               <p>
-                Angular (2+), React.js, NgRx, RxJS, TypeScript, JavaScript (ES6+), HTML5, CSS3,
-                Angular Material, Ant Design, Tailwind CSS, Bootstrap, Material UI
+                Angular (2+), React.js, NextJS, NgRx, RxJS, TypeScript, JavaScript (ES6+), HTML5, CSS3,
+                Angular Material, Ant Design, Tailwind CSS, Bootstrap, Material UI, Accessibility Standards
               </p>
             </div>
             <div className="card">
               <h3>Backend</h3>
-              <p>Node.js, ExpressJS, REST APIs</p>
+              <p>Node.js, Express.js, REST APIs, MongoDB, SQL, JWT Authentication, Role-Based Access Control, 
+                Third-Party API Integration, Error Handling, Debugging</p>
             </div>
             <div className="card">
               <h3>Database</h3>
