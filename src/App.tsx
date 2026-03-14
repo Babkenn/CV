@@ -455,7 +455,21 @@ const App = () => {
 
         <section className="section fade-in">
           <h2 className="section-title">Professional Experience</h2>
-
+          <article className="experience-card">
+            <header className="experience-header">
+              <div>
+                <h3>Freelance Frontend Developer (React.js)</h3>
+                <p className="company">2025 - Present</p>
+              </div>
+              <span className="pill">React + Ant Design</span>
+            </header>
+            <ul className="bullet-list">
+              <li>Built a modern frontend application using React.js and Ant Design.</li>
+              <li>Designed frontend architecture and a reusable UI component library.</li>
+              <li>Integrated backend APIs and optimized performance and responsiveness.</li>
+            </ul>
+          </article>
+          
           <article className="experience-card">
             <header className="experience-header">
               <div>
@@ -501,21 +515,6 @@ const App = () => {
                 Collaborated with product owners, BAs, and UX teams to deliver business‑aligned
                 solutions.
               </li>
-            </ul>
-          </article>
-
-          <article className="experience-card">
-            <header className="experience-header">
-              <div>
-                <h3>Freelance Frontend Developer (React.js)</h3>
-                <p className="company">2025 - Present</p>
-              </div>
-              <span className="pill">React + Ant Design</span>
-            </header>
-            <ul className="bullet-list">
-              <li>Built a modern frontend application using React.js and Ant Design.</li>
-              <li>Designed frontend architecture and a reusable UI component library.</li>
-              <li>Integrated backend APIs and optimized performance and responsiveness.</li>
             </ul>
           </article>
         </section>
