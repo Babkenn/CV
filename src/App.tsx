@@ -291,8 +291,7 @@ export const App: React.FC = () => {
   return <List items={data} />;
 }
   You should hire me! 
-  Call me at 
-  +374 95 203234 
+  Call me at +374 95 203234 
 const App = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -390,7 +389,11 @@ const App = () => {
           <span className="badge">Senior Frontend / Full‑Stack Developer</span>
           <h1 className="hero-title">Babken Pokrikyan</h1>
           <p className="hero-subtitle">
-          Front-end / Full-Stack Engineer with 7+ years of experience delivering scalable enterprise platforms, complex business applications, and high-performance front-end architectures using Angular, React, and TypeScript.
+            Senior Frontend / Full-Stack Engineer with 8+ years of experience building
+            enterprise platforms and complex business applications. Specialized in Angular,
+            React, TypeScript, and Node.js, with a strong focus on performance, accessibility,
+            and scalable architecture.
+            Experienced in working with US-based clients and delivering high-quality production systems.
           </p>
           <div className="hero-meta">
             <span>📍 Armenia (Open to Remote)</span>
@@ -410,7 +413,7 @@ const App = () => {
           <div className="hero-card-inner">
             <p className="hero-card-title">Tech Snapshot</p>
             <ul className="hero-card-list">
-              <li>Angular, React, TypeScript, NgRx, Redux, RxJS, Tailwind CSS, Bootstrap, Material UI</li>
+              <li>Angular, React, NextJs, TypeScript, NgRx, Redux, RxJS, Tailwind CSS, Bootstrap, Material UI</li>
               <li>Node.js, REST APIs, MongoDB</li>
               <li>Code Reviews, Refactoring, Version Upgrades</li>
               <li>Performance & Bundle Optimization</li>
@@ -429,14 +432,13 @@ const App = () => {
             <div className="card">
               <h3>Frontend</h3>
               <p>
-                Angular (2+), React.js, NextJS, NgRx, RxJS, TypeScript, JavaScript (ES6+), HTML5, CSS3,
-                Angular Material, Ant Design, Tailwind CSS, Bootstrap, Material UI, Accessibility Standards
+                Angular (2+), React.js, NextJs, Redux, NgRx, RxJS, TypeScript, JavaScript (ES6+), HTML5, CSS3,
+                Angular Material, Ant Design, Tailwind CSS, Bootstrap, Material UI
               </p>
             </div>
             <div className="card">
               <h3>Backend</h3>
-              <p>Node.js, Express.js, REST APIs, MongoDB, SQL, JWT Authentication, Role-Based Access Control, 
-                Third-Party API Integration, Error Handling, Debugging</p>
+              <p>Node.js, ExpressJS, REST APIs</p>
             </div>
             <div className="card">
               <h3>Database</h3>
@@ -455,46 +457,80 @@ const App = () => {
 
         <section className="section fade-in">
           <h2 className="section-title">Professional Experience</h2>
-          <article className="experience-card">
-            <header className="experience-header">
-              <div>
-                <h3>Freelance Frontend Developer (React.js)</h3>
-                <p className="company">2025 - Present</p>
-              </div>
-              <span className="pill">React + Ant Design</span>
-            </header>
-            <ul className="bullet-list">
-              <li>Built a modern frontend application using React.js and Ant Design.</li>
-              <li>Designed frontend architecture and a reusable UI component library.</li>
-              <li>Integrated backend APIs and optimized performance and responsiveness.</li>
-            </ul>
-          </article>
-          
+
           <article className="experience-card">
             <header className="experience-header">
               <div>
                 <h3>Senior Full‑Stack Developer</h3>
                 <p className="company">
-                  Benekiva / FreeDOM Development · US – Remote · 2018 – 2026
+                  Benekiva / FreeDOM Development · US - Remote · Aug 2017 - Nov 2025
                 </p>
               </div>
               <span className="pill">Enterprise Insurance Platform</span>
             </header>
+            <div className="work-type-grid" aria-label="Work type timeline">
+              <div className="work-type-item">
+                <span className="work-type-label">Full-time</span>
+                <span className="work-type-dates">Aug 2017 - Sep 2021</span>
+              </div>
+              <div className="work-type-item">
+                <span className="work-type-label">Part-time</span>
+                <span className="work-type-dates">Sep 2021 - Mar 2023</span>
+              </div>
+              <div className="work-type-item">
+                <span className="work-type-label">Full-time</span>
+                <span className="work-type-dates">Mar 2023 - Nov 2025</span>
+              </div>
+            </div>
             <ul className="bullet-list">
               <li>
-                Lead development of an enterprise‑level insurance platform used in the US market.
+                Tech: Angular 2+, Angular Material, TypeScript, Node.js, MongoDB.
               </li>
               <li>
-                Architected and implemented scalable frontend modules using Angular and RxJS.
-              </li>
-              <li>Contributed to backend services using Node.js and MongoDB.</li>
-              <li>Led a team of 5 developers, managing sprint cycles and technical planning.</li>
-              <li>Conducted detailed code reviews and enforced high engineering standards.</li>
-              <li>
-                Improved accessibility compliance (ARIA, semantic HTML, keyboard navigation).
+                Spearheaded development of an enterprise insurance platform for the US market,
+                delivering new features and functional enhancements across multiple product
+                modules.
               </li>
               <li>
-                Managed major framework and dependency upgrades to ensure long‑term maintainability.
+                Improved performance / bundle size / API response times by 30%
+              </li>
+              <li>
+                Facilitated strong cross-team collaboration through detailed code reviews,
+                improving code quality and release confidence.
+              </li>
+              <li>
+                Led team of 5 developers
+              </li>
+              <li>
+                Mentored junior developers and conducted code reviews to improve code quality and release confidence.
+              </li>
+              <li>
+                Improved accessibility using ARIA attributes, semantic HTML, and keyboard
+                navigation patterns.
+              </li>
+            </ul>
+          </article>
+
+          <article className="experience-card">
+            <header className="experience-header">
+              <div>
+                <h3>Freelance Frontend Developer (React.js)</h3>
+                <p className="company">Remote · 2025 - Present</p>
+              </div>
+              <span className="pill">React + Ant Design</span>
+            </header>
+            <ul className="bullet-list">
+              <li>
+                Built a modern React application with Ant Design, focusing on reusable and
+                maintainable UI architecture.
+              </li>
+              <li>
+                Designed scalable frontend structure and shared component patterns for faster
+                feature delivery.
+              </li>
+              <li>
+                Integrated backend APIs and improved responsiveness and runtime performance across
+                key user flows.
               </li>
             </ul>
           </article>
@@ -503,17 +539,17 @@ const App = () => {
             <header className="experience-header">
               <div>
                 <h3>Frontend Developer</h3>
-                <p className="company">Iunetworks · Yerevan · 2021 – 2023</p>
+                <p className="company">IUNetworks · Yerevan · 2021 - 2023</p>
               </div>
               <span className="pill">Governmental Tax System</span>
             </header>
             <ul className="bullet-list">
-              <li>Developed a large‑scale governmental Tax System platform.</li>
-              <li>Built complex dynamic forms with advanced validations and workflows.</li>
-              <li>Integrated REST APIs and implemented reusable component architecture.</li>
+              <li>Developed major modules for a large-scale governmental tax platform.</li>
+              <li>Implemented complex dynamic forms with advanced validations and multi-step workflows.</li>
+              <li>Integrated REST APIs and built reusable components to improve speed and consistency.</li>
               <li>
-                Collaborated with product owners, BAs, and UX teams to deliver business‑aligned
-                solutions.
+                Collaborated closely with Product Owners, Business Analysts, and UX teams to
+                deliver business-aligned solutions.
               </li>
             </ul>
           </article>
@@ -538,7 +574,7 @@ const App = () => {
       </main>
 
       <footer className="footer">
-        <span>Available for remote opportunities.</span>
+        <span>Open to Senior Frontend / Full-Stack opportunities (Remote).</span>
         <span>Let’s build something impactful.</span>
       </footer>
     </div>

@@ -1073,6 +1073,35 @@ body {
   margin-top: 4px;
 }
 
+.work-type-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 8px 0 10px;
+}
+
+.work-type-item {
+  padding: 8px 10px;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  border-radius: 10px;
+  background: radial-gradient(circle at 0 0, rgba(15, 23, 42, 0.98), rgba(15, 23, 42, 0.88));
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.work-type-label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #cbd5e1;
+}
+
+.work-type-dates {
+  font-size: 12px;
+  color: var(--muted);
+}
+
 .languages {
   display: flex;
   flex-wrap: wrap;
@@ -1178,6 +1207,10 @@ body {
   .company {
     overflow-wrap: break-word;
     word-wrap: break-word;
+  }
+
+  .work-type-grid {
+    grid-template-columns: 1fr;
   }
 
   .hero-meta {
